@@ -20,8 +20,8 @@ authorizationMiddleware := jwt.Init(http.HandlerFunc(func(w http.ResponseWriter,
 
 // whitelisting a domain
 authorizationMiddleware := jwt.Init(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-  w.WriteHeader(http.StatusOK)
-  w.Write([]byte("Authorized Hello World"))
+	w.WriteHeader(http.StatusOK)
+	w.Write([]byte("Authorized Hello World"))
 }), "stefanosx.com")
 
 mux.Handle("/test", authorizationMiddleware)

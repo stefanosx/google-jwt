@@ -1,5 +1,5 @@
 # google-jwt
-Simple package for google JWT token authorization
+Simple package for authorizing google JWT token
 
 ## Installation
 

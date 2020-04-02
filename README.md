@@ -16,7 +16,7 @@ import {
 	jwt "github.com/stefanosx/google-jwt"
 }
 
-// Pass empty string if you don't waant to whitelist a domain
+// Pass empty string if you don't want to whitelist a domain
 authorizationMiddleware := jwt.Init(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 	w.Write([]byte("Authorized Hello World"))
